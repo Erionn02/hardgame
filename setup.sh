@@ -5,7 +5,7 @@ echo "Add below line to /etc/sudoers if it is not present"
 
 echo "Installing pip and conan..."
 apt install -U python3-pip
-pip install -U conan
+pip install -U conan==1.59.0
 
 echo "Resetting default conan profile..."
 conan profile new default --detect --force

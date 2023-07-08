@@ -1,8 +1,11 @@
 [requires]
 gtest/1.11.0
 cppzmq/4.6.0
-sfml/2.5.1
+sfml/2.6.0
+boost/1.81.0
 imgui/1.89.1
+fmt/10.0.0
+spdlog/1.11.0
 
 
 [generators]
