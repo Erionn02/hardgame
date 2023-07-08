@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="template_project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake-build-debug-wsl\;CMake Files\cmake-build-debug-wsl\conan\;CMake Files\src\;CMake Files\apps\;CMake Files\tests\;CMake Files\tests\unit_tests\;CMake Files\tests\integration_tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_lib_two">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/lib/libtemplate_lib_two.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 template_lib_two"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_lib_two/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/lib/libtemplate_lib_two.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 template_lib_two/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_lib_one">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/lib/libtemplate_lib_one.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 template_lib_one"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_lib_one/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/lib/libtemplate_lib_one.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 template_lib_one/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_project">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/template_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 template_project"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_project/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/template_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 template_project/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/apps/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleUnitTest2">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 exampleUnitTest2"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleUnitTest2/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 exampleUnitTest2/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleUnitTest">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 exampleUnitTest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleUnitTest/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 exampleUnitTest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleIntegrationTest">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleIntegrationTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 exampleIntegrationTest"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleIntegrationTest/fast">
+				<Option output="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleIntegrationTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aczi/test/hardgame/cmake-build-debug-wsl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/aczi/test/hardgame/include"/>
+					<Add directory="/home/aczi/.conan/data/gtest/1.11.0/_/_/package/7320405f83ec32d8556b524cdda87ee295bb7b84/include"/>
+					<Add directory="/home/aczi/.conan/data/cppzmq/4.6.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/sfml/2.5.1/_/_/package/d4e608eff09061506d13800756225d0beea9c054/include"/>
+					<Add directory="/home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/include"/>
+					<Add directory="/home/aczi/.conan/data/zeromq/4.3.4/_/_/package/4a4500bdf9b12024d2cf6e38334aa40f7cabc37c/include"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include"/>
+					<Add directory="/home/aczi/.conan/data/freetype/2.13.0/_/_/package/f1014dc4f9380132c471ceb778980949abf136d3/include/freetype2"/>
+					<Add directory="/home/aczi/.conan/data/stb/cci.20220909/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include"/>
+					<Add directory="/home/aczi/.conan/data/openal-soft/1.22.2/_/_/package/7ff6dc6a696b2e61c6aa7572d8094c2727b0baae/include/AL"/>
+					<Add directory="/home/aczi/.conan/data/vorbis/1.3.7/_/_/package/033a9a186751ed382a6fa5fa2c844ad34b7c3302/include"/>
+					<Add directory="/home/aczi/.conan/data/libsodium/1.0.18/_/_/package/090017fccd7b493020671020e5964801d6ba8054/include"/>
+					<Add directory="/home/aczi/.conan/data/libpng/1.6.40/_/_/package/7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7/include"/>
+					<Add directory="/home/aczi/.conan/data/bzip2/1.0.8/_/_/package/da606cf731e334010b0bf6e85a2a6f891b9f36b0/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include"/>
+					<Add directory="/home/aczi/.conan/data/brotli/1.0.9/_/_/package/b21556a366bf52552d3a00ce381b508d0563e081/include/brotli"/>
+					<Add directory="/home/aczi/.conan/data/ogg/1.3.5/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/home/aczi/.conan/data/libalsa/1.2.7.2/_/_/package/d48130e0dd76369b1338deb3b2372c5a649f9f2d/include"/>
+					<Add directory="/home/aczi/.conan/data/zlib/1.2.13/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 exampleIntegrationTest/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aczi/test/hardgame/cmake-build-debug-wsl/tests/integration_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/aczi/test/hardgame/apps/main.cpp">
+			<Option target="template_project"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/src/TestClass.cpp">
+			<Option target="template_lib_one"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/src/TestClass2.cpp">
+			<Option target="template_lib_two"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/integration_tests/exampleIntegrationTest.cpp">
+			<Option target="exampleIntegrationTest"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/unit_tests/ExampleUnitTest.cpp">
+			<Option target="exampleUnitTest"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/unit_tests/ExampleUnitTest2.cpp">
+			<Option target="exampleUnitTest2"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/conanfile.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/cmake/CMakeHelpers.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/cmake-build-debug-wsl/conanbuildinfo.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-wsl\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/cmake-build-debug-wsl/conan/conan.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-wsl\conan\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/unit_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\unit_tests\"/>
+		</Unit>
+		<Unit filename="/home/aczi/test/hardgame/tests/integration_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\integration_tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

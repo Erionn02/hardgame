@@ -1,0 +1,120 @@
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/sh -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/aczi/test/hardgame/cmake-build-debug-wsl && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /home/aczi/test/hardgame; sleep 0.001"
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: Automatic detection of conan settings from cmake
+-- Conan: Settings= -pr=default
+-- Conan: checking conan executable
+-- Conan: Found program /usr/local/bin/conan
+-- Conan: Version found Conan version 1.59.0
+-- Conan executing: /usr/local/bin/conan install /home/aczi/test/hardgame/conanfile.txt -pr=default -g=cmake --build=missing
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+conanfile.txt: Installing package
+Requirements
+    brotli/1.0.9 from 'conancenter' - Cache
+    bzip2/1.0.8 from 'conancenter' - Cache
+    cppzmq/4.6.0 from 'conancenter' - Cache
+    flac/1.4.2 from 'conancenter' - Cache
+    freetype/2.13.0 from 'conancenter' - Cache
+    gtest/1.11.0 from 'conancenter' - Cache
+    imgui/1.89.1 from 'conancenter' - Cache
+    libalsa/1.2.7.2 from 'conancenter' - Cache
+    libpng/1.6.40 from 'conancenter' - Cache
+    libsodium/1.0.18 from 'conancenter' - Cache
+    libudev/system from 'conancenter' - Cache
+    ogg/1.3.5 from 'conancenter' - Cache
+    openal-soft/1.22.2 from 'conancenter' - Cache
+    opengl/system from 'conancenter' - Cache
+    sfml/2.5.1 from 'conancenter' - Cache
+    stb/cci.20220909 from 'conancenter' - Cache
+    vorbis/1.3.7 from 'conancenter' - Cache
+    xorg/system from 'conancenter' - Cache
+    zeromq/4.3.4 from 'conancenter' - Cache
+    zlib/1.2.13 from 'conancenter' - Cache
+Packages
+    brotli/1.0.9:b21556a366bf52552d3a00ce381b508d0563e081 - Cache
+    bzip2/1.0.8:da606cf731e334010b0bf6e85a2a6f891b9f36b0 - Cache
+    cppzmq/4.6.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    flac/1.4.2:b9bd28193f63cd74fd2213b63c74017e7893c24d - Cache
+    freetype/2.13.0:f1014dc4f9380132c471ceb778980949abf136d3 - Cache
+    gtest/1.11.0:7320405f83ec32d8556b524cdda87ee295bb7b84 - Cache
+    imgui/1.89.1:b911f48570f9bb2902d9e83b2b9ebf9d376c8c56 - Cache
+    libalsa/1.2.7.2:d48130e0dd76369b1338deb3b2372c5a649f9f2d - Cache
+    libpng/1.6.40:7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7 - Cache
+    libsodium/1.0.18:090017fccd7b493020671020e5964801d6ba8054 - Cache
+    libudev/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    ogg/1.3.5:6af9cc7cb931c5ad942174fd7838eb655717c709 - Cache
+    openal-soft/1.22.2:7ff6dc6a696b2e61c6aa7572d8094c2727b0baae - Cache
+    opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    sfml/2.5.1:d4e608eff09061506d13800756225d0beea9c054 - Cache
+    stb/cci.20220909:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    vorbis/1.3.7:033a9a186751ed382a6fa5fa2c844ad34b7c3302 - Cache
+    xorg/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    zeromq/4.3.4:4a4500bdf9b12024d2cf6e38334aa40f7cabc37c - Cache
+    zlib/1.2.13:6af9cc7cb931c5ad942174fd7838eb655717c709 - Cache
+
+Installing (downloading, building) binaries...
+brotli/1.0.9: Already installed!
+bzip2/1.0.8: Already installed!
+gtest/1.11.0: Already installed!
+imgui/1.89.1: Already installed!
+imgui/1.89.1: Appending PATH env var with : /home/aczi/.conan/data/imgui/1.89.1/_/_/package/b911f48570f9bb2902d9e83b2b9ebf9d376c8c56/bin
+libalsa/1.2.7.2: Already installed!
+libsodium/1.0.18: Already installed!
+libudev/system: Already installed!
+ogg/1.3.5: Already installed!
+opengl/system: Already installed!
+stb/cci.20220909: Already installed!
+xorg/system: Already installed!
+zlib/1.2.13: Already installed!
+flac/1.4.2: Already installed!
+flac/1.4.2: Appending PATH environment variable: /home/aczi/.conan/data/flac/1.4.2/_/_/package/b9bd28193f63cd74fd2213b63c74017e7893c24d/bin
+libpng/1.6.40: Already installed!
+openal-soft/1.22.2: Already installed!
+vorbis/1.3.7: Already installed!
+zeromq/4.3.4: Already installed!
+cppzmq/4.6.0: Already installed!
+freetype/2.13.0: Already installed!
+sfml/2.5.1: Already installed!
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Aggregating env generators
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
+-- Conan: Loading conanbuildinfo.cmake
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: /home/aczi/test/hardgame/cmake-build-debug-wsl
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+Coverage report disabled
+NOT RELEASE mode - enable testing
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aczi/test/hardgame/cmake-build-debug-wsl

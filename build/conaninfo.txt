@@ -1,0 +1,103 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=9
+    os=Linux
+
+[requires]
+    cppzmq/4.Y.Z
+    gtest/1.Y.Z
+    imgui/1.Y.Z
+    sfml/2.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=9
+    os=Linux
+    os_build=Linux
+
+[full_requires]
+    brotli/1.0.9:b21556a366bf52552d3a00ce381b508d0563e081
+    bzip2/1.0.8:da606cf731e334010b0bf6e85a2a6f891b9f36b0
+    cppzmq/4.6.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    flac/1.4.2:b9bd28193f63cd74fd2213b63c74017e7893c24d
+    freetype/2.13.0:f1014dc4f9380132c471ceb778980949abf136d3
+    gtest/1.11.0:7320405f83ec32d8556b524cdda87ee295bb7b84
+    imgui/1.89.1:b911f48570f9bb2902d9e83b2b9ebf9d376c8c56
+    libalsa/1.2.7.2:d48130e0dd76369b1338deb3b2372c5a649f9f2d
+    libpng/1.6.40:7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7
+    libudev/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    ogg/1.3.5:6af9cc7cb931c5ad942174fd7838eb655717c709
+    openal-soft/1.22.2:7ff6dc6a696b2e61c6aa7572d8094c2727b0baae
+    opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    sfml/2.5.1:d4e608eff09061506d13800756225d0beea9c054
+    stb/cci.20220909:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    vorbis/1.3.7:033a9a186751ed382a6fa5fa2c844ad34b7c3302
+    xorg/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    zlib/1.2.13:6af9cc7cb931c5ad942174fd7838eb655717c709
+
+[full_options]
+    brotli:enable_debug=False
+    brotli:enable_log=False
+    brotli:enable_portable=False
+    brotli:enable_rbit=True
+    brotli:endianness=None
+    brotli:fPIC=True
+    brotli:shared=False
+    brotli:target_bits=None
+    bzip2:build_executable=True
+    bzip2:fPIC=True
+    bzip2:shared=False
+    flac:fPIC=True
+    flac:shared=False
+    freetype:fPIC=True
+    freetype:shared=False
+    freetype:subpixel=False
+    freetype:with_brotli=True
+    freetype:with_bzip2=True
+    freetype:with_png=True
+    freetype:with_zlib=True
+    gtest:build_gmock=True
+    gtest:fPIC=True
+    gtest:hide_symbols=False
+    gtest:no_main=False
+    gtest:shared=False
+    imgui:fPIC=True
+    imgui:shared=False
+    libalsa:disable_python=True
+    libalsa:fPIC=True
+    libalsa:shared=False
+    libpng:api_prefix=
+    libpng:fPIC=True
+    libpng:shared=False
+    libpng:sse=True
+    ogg:fPIC=True
+    ogg:shared=False
+    openal-soft:fPIC=True
+    openal-soft:shared=False
+    sfml:audio=True
+    sfml:fPIC=True
+    sfml:graphics=True
+    sfml:network=True
+    sfml:shared=False
+    sfml:window=True
+    stb:with_deprecated=True
+    vorbis:fPIC=True
+    vorbis:shared=False
+    zlib:fPIC=True
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+

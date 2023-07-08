@@ -21,6 +21,6 @@ int main() {
     auto xd = std::make_unique<uint8_t[]>(sizeof(some_data));
     std::memcpy(xd.get(),m.data(),m.size());
     std::cout<<std::memcmp(&some_data,xd.get(),m.size());
-
+    std::cout<<"XD";
     return 0;
 }

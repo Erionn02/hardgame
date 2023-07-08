@@ -1,0 +1,5 @@
+add_test( ExampleUnitTest2.exampleTestTrue /home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest2 [==[--gtest_filter=ExampleUnitTest2.exampleTestTrue]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ExampleUnitTest2.exampleTestTrue PROPERTIES WORKING_DIRECTORY /home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests VS_DEBUGGER_WORKING_DIRECTORY)
+add_test( ExampleUnitTest2.exampleTestFalse /home/aczi/test/hardgame/cmake-build-debug-wsl/bin/exampleUnitTest2 [==[--gtest_filter=ExampleUnitTest2.exampleTestFalse]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ExampleUnitTest2.exampleTestFalse PROPERTIES WORKING_DIRECTORY /home/aczi/test/hardgame/cmake-build-debug-wsl/tests/unit_tests VS_DEBUGGER_WORKING_DIRECTORY)
+set( exampleUnitTest2_TESTS ExampleUnitTest2.exampleTestTrue ExampleUnitTest2.exampleTestFalse)

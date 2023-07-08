@@ -1,0 +1,194 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "brotli:enable_debug=False\nbrotli:enable_log=False\nbrotli:enable_portable=False\nbrotli:enable_rbit=True\nbrotli:endianness=None\nbrotli:fPIC=True\nbrotli:shared=False\nbrotli:target_bits=None\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:subpixel=False\nfreetype:with_brotli=True\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\ngtest:build_gmock=True\ngtest:fPIC=True\ngtest:hide_symbols=False\ngtest:no_main=False\ngtest:shared=False\nimgui:fPIC=True\nimgui:shared=False\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:shared=False\nlibpng:sse=True\nogg:fPIC=True\nogg:shared=False\nopenal-soft:fPIC=True\nopenal-soft:shared=False\nsfml:audio=True\nsfml:fPIC=True\nsfml:graphics=True\nsfml:network=True\nsfml:shared=False\nsfml:window=True\nstb:with_deprecated=True\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "5",
+     "20"
+    ],
+    "path": "../conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "gtest/1.11.0",
+    "options": "build_gmock=True\nfPIC=True\nhide_symbols=False\nno_main=False\nshared=False",
+    "package_id": "7320405f83ec32d8556b524cdda87ee295bb7b84",
+    "prev": "0",
+    "context": "host"
+   },
+   "2": {
+    "ref": "cppzmq/4.6.0",
+    "options": "libsodium:PIE=False\nlibsodium:fPIC=True\nlibsodium:shared=False\nlibsodium:use_soname=True\nzeromq:encryption=libsodium\nzeromq:fPIC=True\nzeromq:poller=None\nzeromq:shared=False\nzeromq:with_draft_api=False\nzeromq:with_norm=False\nzeromq:with_radix_tree=False\nzeromq:with_websocket=False",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "zeromq/4.3.4",
+    "options": "encryption=libsodium\nfPIC=True\npoller=None\nshared=False\nwith_draft_api=False\nwith_norm=False\nwith_radix_tree=False\nwith_websocket=False\nlibsodium:PIE=False\nlibsodium:fPIC=True\nlibsodium:shared=False\nlibsodium:use_soname=True",
+    "package_id": "4a4500bdf9b12024d2cf6e38334aa40f7cabc37c",
+    "prev": "0",
+    "requires": [
+     "4"
+    ],
+    "context": "host"
+   },
+   "4": {
+    "ref": "libsodium/1.0.18",
+    "options": "PIE=False\nfPIC=True\nshared=False\nuse_soname=True",
+    "package_id": "090017fccd7b493020671020e5964801d6ba8054",
+    "prev": "0",
+    "context": "host"
+   },
+   "5": {
+    "ref": "sfml/2.5.1",
+    "options": "audio=True\nfPIC=True\ngraphics=True\nnetwork=True\nshared=False\nwindow=True\nbrotli:enable_debug=False\nbrotli:enable_log=False\nbrotli:enable_portable=False\nbrotli:enable_rbit=True\nbrotli:endianness=None\nbrotli:fPIC=True\nbrotli:shared=False\nbrotli:target_bits=None\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:subpixel=False\nfreetype:with_brotli=True\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:shared=False\nlibpng:sse=True\nogg:fPIC=True\nogg:shared=False\nopenal-soft:fPIC=True\nopenal-soft:shared=False\nstb:with_deprecated=True\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:shared=False",
+    "package_id": "d4e608eff09061506d13800756225d0beea9c054",
+    "prev": "0",
+    "requires": [
+     "6",
+     "7",
+     "8",
+     "9",
+     "14",
+     "15",
+     "17",
+     "19"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "opengl/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "7": {
+    "ref": "libudev/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "8": {
+    "ref": "xorg/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "9": {
+    "ref": "freetype/2.13.0",
+    "options": "fPIC=True\nshared=False\nsubpixel=False\nwith_brotli=True\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbrotli:enable_debug=False\nbrotli:enable_log=False\nbrotli:enable_portable=False\nbrotli:enable_rbit=True\nbrotli:endianness=None\nbrotli:fPIC=True\nbrotli:shared=False\nbrotli:target_bits=None\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:shared=False\nlibpng:sse=True\nzlib:fPIC=True\nzlib:shared=False",
+    "package_id": "f1014dc4f9380132c471ceb778980949abf136d3",
+    "prev": "0",
+    "requires": [
+     "10",
+     "11",
+     "12",
+     "13"
+    ],
+    "context": "host"
+   },
+   "10": {
+    "ref": "libpng/1.6.40",
+    "options": "api_prefix=\nfPIC=True\nshared=False\nsse=True\nzlib:fPIC=True\nzlib:shared=False",
+    "package_id": "7929d8ecf29c60d74fd3c1f6cb78bbb3cb49c0c7",
+    "prev": "0",
+    "requires": [
+     "11"
+    ],
+    "context": "host"
+   },
+   "11": {
+    "ref": "zlib/1.2.13",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "6af9cc7cb931c5ad942174fd7838eb655717c709",
+    "prev": "0",
+    "context": "host"
+   },
+   "12": {
+    "ref": "bzip2/1.0.8",
+    "options": "build_executable=True\nfPIC=True\nshared=False",
+    "package_id": "da606cf731e334010b0bf6e85a2a6f891b9f36b0",
+    "prev": "0",
+    "context": "host"
+   },
+   "13": {
+    "ref": "brotli/1.0.9",
+    "options": "enable_debug=False\nenable_log=False\nenable_portable=False\nenable_rbit=True\nendianness=None\nfPIC=True\nshared=False\ntarget_bits=None",
+    "package_id": "b21556a366bf52552d3a00ce381b508d0563e081",
+    "prev": "0",
+    "context": "host"
+   },
+   "14": {
+    "ref": "stb/cci.20220909",
+    "options": "with_deprecated=True",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "15": {
+    "ref": "flac/1.4.2",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "package_id": "b9bd28193f63cd74fd2213b63c74017e7893c24d",
+    "prev": "0",
+    "requires": [
+     "16"
+    ],
+    "context": "host"
+   },
+   "16": {
+    "ref": "ogg/1.3.5",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "6af9cc7cb931c5ad942174fd7838eb655717c709",
+    "prev": "0",
+    "context": "host"
+   },
+   "17": {
+    "ref": "openal-soft/1.22.2",
+    "options": "fPIC=True\nshared=False\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False",
+    "package_id": "7ff6dc6a696b2e61c6aa7572d8094c2727b0baae",
+    "prev": "0",
+    "requires": [
+     "18"
+    ],
+    "context": "host"
+   },
+   "18": {
+    "ref": "libalsa/1.2.7.2",
+    "options": "disable_python=True\nfPIC=True\nshared=False",
+    "package_id": "d48130e0dd76369b1338deb3b2372c5a649f9f2d",
+    "prev": "0",
+    "context": "host"
+   },
+   "19": {
+    "ref": "vorbis/1.3.7",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "package_id": "033a9a186751ed382a6fa5fa2c844ad34b7c3302",
+    "prev": "0",
+    "requires": [
+     "16"
+    ],
+    "context": "host"
+   },
+   "20": {
+    "ref": "imgui/1.89.1",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "b911f48570f9bb2902d9e83b2b9ebf9d376c8c56",
+    "prev": "0",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++11\ncompiler.version=9\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n"
+}
