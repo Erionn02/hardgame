@@ -15,6 +15,7 @@ function(package_add_test TESTNAME)
             PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${PROJECT_DIR}"
             )
     set_target_properties(${TESTNAME} PROPERTIES FOLDER ${CMAKE_SOURCE_DIR}/tests)
+    compile_asset_dir_definition(${TESTNAME})
 endfunction()
 
 function(add_app APP_NAME)
@@ -22,6 +23,8 @@ function(add_app APP_NAME)
     get_property(PROJECT_LIBS GLOBAL PROPERTY PROJECT_LIBS_PROPERTY)
     target_link_libraries(${APP_NAME} PRIVATE "${PROJECT_LIBS}")
     set_link_options(${APP_NAME})
+    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets")
+    compile_asset_dir_definition(${APP_NAME})
 endfunction()
 
 function(add_lib LIB_NAME)
@@ -31,6 +34,7 @@ function(add_lib LIB_NAME)
     set_property(GLOBAL PROPERTY PROJECT_LIBS_PROPERTY "${PROJECT_LIBS};${LIB_NAME}")
     target_link_libraries(${LIB_NAME} PRIVATE "${ARGS_DEPENDS}")
     set_link_options(${LIB_NAME})
+    compile_asset_dir_definition(${LIB_NAME})
 endfunction()
 
 function(set_link_options TARGET_NAME)
@@ -77,4 +81,8 @@ function(download_conan_cmake)
         file(DOWNLOAD "https://raw.githubusercontent.com/conan-io/cmake-conan/master/conan.cmake"
                 "${CMAKE_BINARY_DIR}/conan/conan.cmake")
     endif ()
+endfunction()
+
+function(compile_asset_dir_definition TARGET_NAME)
+    target_compile_definitions(${TARGET_NAME} PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets")
 endfunction()

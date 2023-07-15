@@ -1,5 +1,11 @@
 include(CMakePrintHelpers)
 
+
+add_lib("${CMAKE_PROJECT_NAME}_lib"
+        SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/Game.cpp
+        )
+
+
 add_lib(template_lib_one
         SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/TestClass.cpp
         )

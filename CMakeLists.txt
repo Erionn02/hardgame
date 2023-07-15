@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(template_project) #TODO change project name
+project(hardgame)
 set(CMAKE_CXX_STANDARD 20)
 
 set(CONAN_SYSTEM_INCLUDES ON)
