@@ -1,3 +1,5 @@
+#pragma once
+
 #include <SFML/Window.hpp>
 #include <SFML/Window/Window.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -23,7 +25,7 @@ private:
 
     sf::RenderWindow window;
     float fps{60.0};
-    float tick_movement{1};
+    float tick_movement{4};
     sf::Time time_per_frame{sf::seconds(1.f/fps)};
 };
 

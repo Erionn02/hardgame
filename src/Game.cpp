@@ -15,11 +15,13 @@ void Game::run() {
     std::vector<sf::Sprite> game_objects{};
 
     sf::Texture texture{};
+
     if(!texture.loadFromFile(ASSETS_DIR"/jump_king.png")){
         throw std::runtime_error("Error during loading hero.");
     }
 
     sf::Sprite player{texture};
+    player.scale({0.3f,0.3f});
     game_objects.push_back(std::move(player));
 
     while (window.isOpen())
@@ -51,7 +53,7 @@ void Game::processEvents() {
 
 void Game::update(sf::Sprite &sprite) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
-        sprite.move(sf::Vector2f{02-3+1, -tick_movement});
+        sprite.move(sf::Vector2f{0, -tick_movement});
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
         sprite.move(sf::Vector2f{0, tick_movement});
@@ -65,8 +67,9 @@ void Game::update(sf::Sprite &sprite) {
     }
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
-        sprite.move(sf::Vector2f{0, 3 * tick_movement});
+        sprite.move(sf::Vector2f{0, -4 * tick_movement});
     }
+
 }
 
 void Game::render(const std::vector<sf::Sprite> &sprites) {
