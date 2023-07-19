@@ -1,4 +1,5 @@
 #pragma once
+#include "Movable.hpp"
 
 #include <SFML/Window.hpp>
 #include <SFML/Window/Window.hpp>
@@ -20,6 +21,7 @@ public:
 private:
     void processEvents();
     void update(sf::Sprite &sprite);
+    void update(std::vector<Movable> &movable_objects);
     void render(const std::vector<sf::Sprite> &sprites);
 
 

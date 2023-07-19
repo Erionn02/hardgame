@@ -9,7 +9,6 @@ int main() {
     Game game{800,600,"Hello world",};
     game.run();
 
-    sf::Shap
 
     return 0;
 }
