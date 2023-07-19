@@ -52,17 +52,17 @@ void Game::processEvents() {
 }
 
 void Game::update(sf::Sprite &sprite) {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)||sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
         sprite.move(sf::Vector2f{0, -tick_movement});
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)||sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down)) {
         sprite.move(sf::Vector2f{0, tick_movement});
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)||sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
         sprite.move(sf::Vector2f{-tick_movement, 0});
     }
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)||sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
         sprite.move(sf::Vector2f{tick_movement, 0});
     }
 
