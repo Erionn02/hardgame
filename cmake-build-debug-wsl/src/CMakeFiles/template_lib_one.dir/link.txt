@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libtemplate_lib_one.a  CMakeFiles/template_lib_one.dir/TestClass.cpp.o
-/usr/bin/ranlib ../lib/libtemplate_lib_one.a
