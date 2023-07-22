@@ -9,12 +9,3 @@ add_lib("${CMAKE_PROJECT_NAME}_lib"
         ${CMAKE_CURRENT_SOURCE_DIR}/RectangleCollisionObject.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/Movable.cpp
         )
-
-
-add_lib(template_lib_one
-        SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/TestClass.cpp
-        )
-
-add_lib(template_lib_two
-        SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/TestClass2.cpp
-        )

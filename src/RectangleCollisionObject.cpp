@@ -2,17 +2,26 @@
 #include "MovementRequest.hpp"
 #include "Movable.hpp"
 
-sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest *movement_request) {
 
+RectangleCollisionObject::RectangleCollisionObject(sf::RectangleShape shape): shape(std::move(shape)) {
+
+}
+
+sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest *movement_request) {
+    (void) movement_request;
+    return {};
 }
 
 bool RectangleCollisionObject::willColide(MovementRequest *movement_request) {
-
-    return false;
+    auto future_area = movement_request->movable->getArea();
+    future_area.top += static_cast<int>((movement_request->future_position - movement_request->current_position).y);
+    future_area.left += static_cast<int>((movement_request->future_position - movement_request->current_position).x);
+    return shape.getTextureRect().intersects(future_area);
 }
 
-void RectangleCollisionObject::adjustPositionIfCollided(MovementRequest *movement_request) {
-    movement_request->movable->move()
-
-
+void RectangleCollisionObject::adjustMovementRequest(MovementRequest *movement_request) {
+    auto my_rect = shape.getTextureRect();
+    movement_request->future_position.y = static_cast<float>(movement_request->movable->velocity.y > 0 ? my_rect.top : my_rect.top + my_rect.height);
+    movement_request->movable->velocity.y=0;
 }
+

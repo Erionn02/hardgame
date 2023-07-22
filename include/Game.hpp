@@ -1,5 +1,6 @@
 #pragma once
 #include "Movable.hpp"
+#include "GameEngine.hpp"
 
 #include <SFML/Window.hpp>
 #include <SFML/Window/Window.hpp>
@@ -14,7 +15,7 @@
 
 class Game {
 public:
-    Game(unsigned int width, unsigned int height, const std::string& game_name);
+    Game(unsigned int width, unsigned int height, const std::string& game_name, std::unique_ptr<GameEngine> game_engine);
 
     void run();
 
@@ -26,6 +27,7 @@ private:
 
 
     sf::RenderWindow window;
+    std::unique_ptr<GameEngine> game_engine;
     float fps{60.0};
     float tick_movement{4};
     sf::Time time_per_frame{sf::seconds(1.f/fps)};
