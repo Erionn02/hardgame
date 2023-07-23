@@ -3,8 +3,10 @@
 #include "Movable.hpp"
 
 
-RectangleCollisionObject::RectangleCollisionObject(sf::RectangleShape shape): shape(std::move(shape)) {
-
+RectangleCollisionObject::RectangleCollisionObject(sf::Texture texture, sf::Vector2f position)
+        : texture(std::move(texture)) {
+    shape.setTexture(&this->texture);
+    shape.setPosition(position);
 }
 
 sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest *movement_request) {
@@ -23,5 +25,13 @@ void RectangleCollisionObject::adjustMovementRequest(MovementRequest *movement_r
     auto my_rect = shape.getTextureRect();
     movement_request->future_position.y = static_cast<float>(movement_request->movable->velocity.y > 0 ? my_rect.top : my_rect.top + my_rect.height);
     movement_request->movable->velocity.y=0;
+}
+
+sf::IntRect RectangleCollisionObject::getArea() {
+    return shape.getTextureRect();
+}
+
+const sf::Drawable & RectangleCollisionObject::getDrawable() {
+    return shape;
 }
 

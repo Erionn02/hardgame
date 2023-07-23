@@ -18,17 +18,6 @@ Game::Game(unsigned int width, unsigned int height, const std::string &game_name
 void Game::run() {
     sf::Clock clock;
     sf::Time time_since_last_update = sf::Time::Zero;
-    std::vector<sf::Sprite> game_objects{};
-
-    sf::Texture texture{};
-
-    if (!texture.loadFromFile(ASSETS_DIR"/jump_king.png")) {
-        throw std::runtime_error("Error during loading hero.");
-    }
-
-    sf::Sprite player{texture};
-    player.scale({0.3f, 0.3f});
-    game_objects.push_back(std::move(player));
 
     while (window.isOpen()) {
         processEvents();
@@ -36,11 +25,10 @@ void Game::run() {
         while (time_since_last_update > time_per_frame) {
             time_since_last_update -= time_per_frame;
             processEvents();
-            update(game_objects.front());
+            auto pressed_keys = getPressedKeys();
+            game_engine->update(time_per_frame, std::move(pressed_keys));
         }
-        render(game_objects);
-        std::cout << "Player position, x: " << game_objects.front().getPosition().x << ", y: "
-                  << game_objects.front().getPosition().y << std::endl;
+        render();
     }
 }
 
@@ -57,31 +45,28 @@ void Game::processEvents() {
     }
 }
 
-void Game::update(sf::Sprite &sprite) {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
-        sprite.move(sf::Vector2f{0, -tick_movement});
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down)) {
-        sprite.move(sf::Vector2f{0, tick_movement});
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
-        sprite.move(sf::Vector2f{-tick_movement, 0});
+std::vector<sf::Keyboard::Key> Game::getPressedKeys() {
+    std::vector<sf::Keyboard::Key> pressed_keys{};
+
+    for (auto pressed_key: {sf::Keyboard::Key::W, sf::Keyboard::Key::S, sf::Keyboard::Key::A, sf::Keyboard::Key::D,
+                            sf::Keyboard::Key::Space}) {
+        if (sf::Keyboard::isKeyPressed(pressed_key)) {
+            pressed_keys.push_back(pressed_key);
+        }
     }
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
-        sprite.move(sf::Vector2f{tick_movement, 0});
-    }
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
-        sprite.move(sf::Vector2f{0, -4 * tick_movement});
-    }
-
+    return pressed_keys;
 }
 
-void Game::render(const std::vector<sf::Sprite> &sprites) {
+
+void Game::render() {
     window.clear();
-    for (const auto &sprite: sprites) {
-        window.draw(sprite);
+    for (const auto &collision_object: game_engine->getCollisionObjects()) {
+        window.draw(collision_object->getDrawable());
+    }
+    for (const auto &movable_object: game_engine->getMovableObjects()) {
+        window.draw(movable_object->getDrawable());
     }
     window.display();
 }
+

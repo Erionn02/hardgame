@@ -22,8 +22,8 @@ public:
 private:
     void processEvents();
     void update(sf::Sprite &sprite);
-    void update(std::vector<Movable> &movable_objects);
-    void render(const std::vector<sf::Sprite> &sprites);
+    std::vector<sf::Keyboard::Key> getPressedKeys();
+    void render();
 
 
     sf::RenderWindow window;

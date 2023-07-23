@@ -1,5 +1,10 @@
 #include "Movable.hpp"
 
+
+Movable::Movable(sf::Sprite sprite): sprite(std::move(sprite)) {
+
+}
+
 MovementRequest Movable::tryMove(sf::Time elapsed_time) {
     return {.current_position = position,
             .size = size,
@@ -18,19 +23,24 @@ void Movable::move(sf::Vector2f velocity_transformation, sf::Time elapsed_time_t
 void Movable::move(sf::Time elapsed_time) {
     position = position + elapsed_time.asSeconds() * velocity +
                0.5f * elapsed_time.asSeconds() * elapsed_time.asSeconds() * acceleration;
-    velocity += acceleration*elapsed_time.asSeconds();
+    velocity += acceleration * elapsed_time.asSeconds();
     sprite.setPosition(position);
 }
 
 std::optional<sf::IntRect> Movable::calculateCollisionArea(sf::IntRect area) {
     sf::IntRect collision_area{};
 
-    if(sprite.getTextureRect().intersects(area, collision_area)){
+    if (sprite.getTextureRect().intersects(area, collision_area)) {
         return collision_area;
     }
     return std::nullopt;
 }
 
+const sf::Drawable &Movable::getDrawable() {
+    return sprite;
+}
+
 sf::IntRect Movable::getArea() {
     return sprite.getTextureRect();
 }
+
