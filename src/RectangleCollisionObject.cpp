@@ -4,8 +4,12 @@
 
 
 RectangleCollisionObject::RectangleCollisionObject(sf::Texture texture, sf::Vector2f position)
-        : texture(std::move(texture)) {
+        : texture(texture) {
     shape.setTexture(&this->texture);
+    sf::Texture texture_xd{};
+    texture_xd.loadFromFile(ASSETS_DIR"/floor.png");
+    texture = texture_xd;
+    shape.setTexture(&texture);
     shape.setPosition(position);
 }
 
@@ -18,6 +22,10 @@ bool RectangleCollisionObject::willColide(MovementRequest *movement_request) {
     auto future_area = movement_request->movable->getArea();
     future_area.top += static_cast<int>((movement_request->future_position - movement_request->current_position).y);
     future_area.left += static_cast<int>((movement_request->future_position - movement_request->current_position).x);
+    auto tmp = shape.getTextureRect();
+    auto tmp2 = shape.getPosition();
+    (void)tmp;
+    (void)tmp2;
     return shape.getTextureRect().intersects(future_area);
 }
 

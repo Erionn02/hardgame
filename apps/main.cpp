@@ -3,6 +3,8 @@
 #include "RectangleCollisionObject.hpp"
 
 #include <SFML/Graphics/Shape.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <spdlog/spdlog.h>
 
 #include <thread>
 
@@ -26,9 +28,9 @@ int main() {
     player.scale({0.3f, 0.3f});
     movable_objects.push_back(std::make_unique<Movable>(std::move(player)));
 
-    sf::Vector2f position{400,350};
+//    sf::Vector2f position{-400,-350};
 
-    collision_objects.push_back(std::make_unique<RectangleCollisionObject>(std::move(floor_texture), position));
+//    collision_objects.push_back(std::make_unique<RectangleCollisionObject>(floor_texture, sf::Vector2f{0,0}));
 
     auto game_engine = std::make_unique<GameEngine>(std::move(movable_objects),
                                                     std::move(collision_objects));

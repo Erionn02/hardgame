@@ -1,6 +1,7 @@
 #pragma once
 
 #include "MovementRequest.hpp"
+#include "GameConfig.hpp"
 #include "CollisionObject.hpp"
 
 #include <SFML/System/Vector2.hpp>
@@ -14,8 +15,10 @@ public:
 
     MovementRequest tryMove(sf::Time elapsed_time);
 
-    void move(sf::Vector2f velocity_transformation, sf::Time elapsed_time_till_collision, sf::Time left_time);
-    void move(sf::Time elapsed_time);
+    void move(const MovementRequest& movement_request);
+    void onRightClicked();
+    void onLeftClicked();
+    void onJumpClicked();
     std::optional<sf::IntRect> calculateCollisionArea(sf::IntRect area);
     sf::IntRect getArea();
     const sf::Drawable & getDrawable();
@@ -28,8 +31,8 @@ private:
 
     sf::Sprite sprite;
 public:
-    sf::Vector2f acceleration;
-    sf::Vector2f velocity;
-    sf::Vector2f position;
+    sf::Vector2f acceleration{0,GameConfig::gravity};
+    sf::Vector2f velocity{0,0};
+    sf::Vector2f position{0,0};
     sf::Vector2f size;
 };

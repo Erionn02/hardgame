@@ -10,21 +10,28 @@ MovementRequest Movable::tryMove(sf::Time elapsed_time) {
             .size = size,
             .future_position =  position + elapsed_time.asSeconds() * velocity +
                                 0.5f * elapsed_time.asSeconds() * elapsed_time.asSeconds() * acceleration,
+            .future_velocity = velocity + acceleration*elapsed_time.asSeconds(),
             .requested_movement_time = elapsed_time,
             .movable = this};
 }
 
-void Movable::move(sf::Vector2f velocity_transformation, sf::Time elapsed_time_till_collision, sf::Time left_time) {
-    move(elapsed_time_till_collision);
-    velocity = sf::Vector2f{velocity.x * velocity_transformation.x, velocity.y * velocity_transformation.y};
-    move(left_time);
+void Movable::move(const MovementRequest &movement_request) {
+    position = movement_request.future_position;
+    velocity = movement_request.future_velocity;
+    sprite.setPosition(position);
 }
 
-void Movable::move(sf::Time elapsed_time) {
-    position = position + elapsed_time.asSeconds() * velocity +
-               0.5f * elapsed_time.asSeconds() * elapsed_time.asSeconds() * acceleration;
-    velocity += acceleration * elapsed_time.asSeconds();
-    sprite.setPosition(position);
+
+void Movable::onRightClicked() {
+    velocity.x = GameConfig::vertical_velocity_tick;
+}
+
+void Movable::onLeftClicked() {
+    velocity.x = -GameConfig::vertical_velocity_tick;
+}
+
+void Movable::onJumpClicked() {
+    velocity.y = GameConfig::jump_velocity;
 }
 
 std::optional<sf::IntRect> Movable::calculateCollisionArea(sf::IntRect area) {

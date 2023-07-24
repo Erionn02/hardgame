@@ -12,28 +12,28 @@ GameEngine::GameEngine(std::vector<std::unique_ptr<Movable>> movable_objects,
 
 void GameEngine::update(sf::Time elapsed_time, std::vector<sf::Keyboard::Key> pressed_keys) {
     for (auto &movable: movable_objects) {
-        for(auto key: pressed_keys) {
+         for(auto key: pressed_keys) {
             if(key == sf::Keyboard::Key::D) {
-                movable->velocity.x = 10;
+                movable->onRightClicked();
             }
 
-            if(key == sf::Keyboard::Key::S) {
-                movable->velocity.x = -10;
+            if(key == sf::Keyboard::Key::A) {
+                movable->onLeftClicked();
             }
 
             if(key == sf::Keyboard::Key::Space) {
-                movable->velocity.y = -40;
+                movable->onJumpClicked();
             }
         }
-        for (auto &collision: collision_objects) {
-            auto movement_request = movable->tryMove(elapsed_time);
-            if (collision->willColide(&movement_request)) {
 
+        auto movement_request = movable->tryMove(elapsed_time);
+        for (auto &collision: collision_objects) {
+            if (collision->willColide(&movement_request)) {
                 collision->adjustMovementRequest(&movement_request);
             }
-//            movable->move()
         }
-
+//
+        movable->move(movement_request);
     }
 
 }
