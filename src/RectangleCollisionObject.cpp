@@ -6,10 +6,9 @@
 RectangleCollisionObject::RectangleCollisionObject(sf::Texture texture, sf::Vector2f position)
         : texture(texture) {
     shape.setTexture(&this->texture);
-    sf::Texture texture_xd{};
-    texture_xd.loadFromFile(ASSETS_DIR"/floor.png");
-    texture = texture_xd;
-    shape.setTexture(&texture);
+    this->texture.loadFromFile(ASSETS_DIR"/floor.png");
+    shape.setTexture(&this->texture);
+    shape.setScale(0.3f,0.3f);
     shape.setPosition(position);
 }
 
@@ -19,6 +18,7 @@ sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest
 }
 
 bool RectangleCollisionObject::willColide(MovementRequest *movement_request) {
+    shape.setTexture(&this->texture);
     auto future_area = movement_request->movable->getArea();
     future_area.top += static_cast<int>((movement_request->future_position - movement_request->current_position).y);
     future_area.left += static_cast<int>((movement_request->future_position - movement_request->current_position).x);

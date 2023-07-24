@@ -19,6 +19,6 @@ public:
     void adjustMovementRequest(MovementRequest *movement_request) override;
 
 private:
-    sf::Texture texture;
+    sf::Texture texture{};
     sf::RectangleShape shape{};
 };

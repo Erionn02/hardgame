@@ -30,7 +30,7 @@ int main() {
 
 //    sf::Vector2f position{-400,-350};
 
-//    collision_objects.push_back(std::make_unique<RectangleCollisionObject>(floor_texture, sf::Vector2f{0,0}));
+    collision_objects.push_back(std::make_unique<RectangleCollisionObject>(floor_texture, sf::Vector2f{0,0}));
 
     auto game_engine = std::make_unique<GameEngine>(std::move(movable_objects),
                                                     std::move(collision_objects));
