@@ -20,5 +20,5 @@ public:
 
 private:
     sf::Texture texture{};
-    sf::RectangleShape shape{};
+    sf::Sprite sprite{};
 };

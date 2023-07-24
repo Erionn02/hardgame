@@ -8,7 +8,7 @@ Movable::Movable(sf::Sprite sprite): sprite(std::move(sprite)) {
 MovementRequest Movable::tryMove(sf::Time elapsed_time) {
     return {.current_position = position,
             .size = size,
-            .future_position =  position + elapsed_time.asSeconds() * velocity +
+            .future_position = position + elapsed_time.asSeconds() * velocity +
                                 0.5f * elapsed_time.asSeconds() * elapsed_time.asSeconds() * acceleration,
             .future_velocity = velocity + acceleration*elapsed_time.asSeconds(),
             .requested_movement_time = elapsed_time,
@@ -48,6 +48,10 @@ const sf::Drawable &Movable::getDrawable() {
 }
 
 sf::IntRect Movable::getArea() {
-    return sprite.getTextureRect();
+    auto texture_rect = sprite.getTextureRect();
+    texture_rect.top = static_cast<int>(sprite.getPosition().y);
+    texture_rect.left = static_cast<int>(sprite.getPosition().x);
+
+    return texture_rect;
 }
 

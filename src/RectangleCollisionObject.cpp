@@ -5,11 +5,11 @@
 
 RectangleCollisionObject::RectangleCollisionObject(sf::Texture texture, sf::Vector2f position)
         : texture(texture) {
-    shape.setTexture(&this->texture);
+    sprite.setTexture(this->texture);
     this->texture.loadFromFile(ASSETS_DIR"/floor.png");
-    shape.setTexture(&this->texture);
-    shape.setScale(0.3f,0.3f);
-    shape.setPosition(position);
+    sprite.setTexture(this->texture);
+//    sprite.setScale(0.3f, 0.3f);
+    sprite.setPosition(position);
 }
 
 sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest *movement_request) {
@@ -18,28 +18,32 @@ sf::Vector2f RectangleCollisionObject::calculateDistanceToBorder(MovementRequest
 }
 
 bool RectangleCollisionObject::willColide(MovementRequest *movement_request) {
-    shape.setTexture(&this->texture);
-    auto future_area = movement_request->movable->getArea();
-    future_area.top += static_cast<int>((movement_request->future_position - movement_request->current_position).y);
-    future_area.left += static_cast<int>((movement_request->future_position - movement_request->current_position).x);
-    auto tmp = shape.getTextureRect();
-    auto tmp2 = shape.getPosition();
-    (void)tmp;
-    (void)tmp2;
-    return shape.getTextureRect().intersects(future_area);
+    auto collision_rect = sprite.getTextureRect();
+    collision_rect.left+= static_cast<int>(sprite.getPosition().x);
+    collision_rect.top+=static_cast<int>(sprite.getPosition().y);
+    auto area = movement_request->movable->getArea();
+    (void)area;
+    auto xd = sprite.getPosition();
+    (void )xd;
+
+    return collision_rect.intersects(movement_request->movable->getArea());
 }
 
 void RectangleCollisionObject::adjustMovementRequest(MovementRequest *movement_request) {
-    auto my_rect = shape.getTextureRect();
-    movement_request->future_position.y = static_cast<float>(movement_request->movable->velocity.y > 0 ? my_rect.top : my_rect.top + my_rect.height);
+    auto my_rect = sprite.getTextureRect();
+    my_rect.left += static_cast<int>(sprite.getPosition().x);
+    my_rect.top+=static_cast<int>(sprite.getPosition().y);
+    if(movement_request->movable->velocity.y >  0) {
+        movement_request->future_position.y = movement_request->current_position.y;
+    }
     movement_request->movable->velocity.y=0;
 }
 
 sf::IntRect RectangleCollisionObject::getArea() {
-    return shape.getTextureRect();
+    return sf::IntRect {sprite.getTextureRect()*sprite.getScale());
 }
 
 const sf::Drawable & RectangleCollisionObject::getDrawable() {
-    return shape;
+    return sprite;
 }
 
