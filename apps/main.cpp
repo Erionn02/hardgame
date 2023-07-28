@@ -29,14 +29,13 @@ int main() {
 //    player.scale({0.3f, 0.3f});
     movable_objects.push_back(std::make_unique<Movable>(std::move(player)));
 
-    sf::Vector2f position{0,400};
-
+    sf::Vector2f position{0,600-54};
     collision_objects.push_back(std::make_unique<RectangleCollisionObject>(floor_texture, position));
 
     auto game_engine = std::make_unique<GameEngine>(std::move(movable_objects),
                                                     std::move(collision_objects));
 
-    Game game{800, 600, "Hello world",std::move(game_engine)};
+    Game game{800, 600, "Jump king",std::move(game_engine)};
     game.run();
 
 

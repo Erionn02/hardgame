@@ -23,11 +23,19 @@ void Movable::move(const MovementRequest &movement_request) {
 
 
 void Movable::onRightClicked() {
-    velocity.x = GameConfig::vertical_velocity_tick;
+    if(velocity.x < 0){
+        velocity.x=0;
+    } else {
+        velocity.x = GameConfig::vertical_velocity_tick;
+    }
 }
 
 void Movable::onLeftClicked() {
-    velocity.x = -GameConfig::vertical_velocity_tick;
+    if(velocity.x > 0){
+        velocity.x=0;
+    } else {
+        velocity.x = -GameConfig::vertical_velocity_tick;
+    }
 }
 
 void Movable::onJumpClicked() {
